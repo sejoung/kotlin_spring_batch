@@ -1,1 +1,1 @@
-rootProject.name = "kotlin_spring_batch_test"
+rootProject.name = "kotlin_spring_batch"
