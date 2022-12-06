@@ -23,6 +23,7 @@ class TestExceptionJob(
     private fun testExceptionStep(): Step {
         return stepBuilderFactory["testExceptionStep"]
             .tasklet { contribution, chunkContext ->
+                Thread.sleep(10000)
                 throw RuntimeException("Exception test")
                 RepeatStatus.FINISHED
             }
